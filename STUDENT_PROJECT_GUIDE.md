@@ -4,7 +4,7 @@
 
 Your team is about to build a **RAG (Retrieval-Augmented Generation)** system - an AI that can answer questions about YOUR documents. This is the same technology used by ChatGPT, GitHub Copilot, and other AI assistants!
 
-**This is a GROUP PROJECT:** Work in teams of 2-4 students. Collaboration is expected and encouraged!
+**This is a GROUP PROJECT:** Work in teams of 3 students. Collaboration is expected and encouraged!
 
 ---
 
@@ -26,20 +26,22 @@ A question-answering system that:
 ## What You'll Learn (Python Fundamentals)
 
 ### Core Skills You'll Practice:
-✅ **File I/O** - Reading documents from your computer
-✅ **String Manipulation** - Splitting and processing text
-✅ **Functions** - Writing reusable code
-✅ **Lists & Dictionaries** - Organizing data
-✅ **Loops** - Processing multiple items
-✅ **Conditionals** - Making decisions in code
-✅ **Basic Math** - Calculating metrics
+
+✅ **File I/O** - Reading documents from your computer  
+✅ **String Manipulation** - Splitting and processing text  
+✅ **Functions** - Writing reusable code  
+✅ **Lists & Dictionaries** - Organizing data  
+✅ **Loops** - Processing multiple items  
+✅ **Conditionals** - Making decisions in code  
+✅ **Basic Math** - Calculating metrics  
 
 ### What's Pre-Built for You:
-✅ Embedding model (converts text to numbers)
-✅ Vector database (stores and searches)
-✅ LLM connection (generates answers)
 
-**Why?** These use complex libraries that would take weeks to learn. We want you to focus on Python fundamentals first!
+✅ Embedding model (converts text to numbers)  
+✅ Vector database (stores and searches)  
+✅ LLM connection (generates answers)  
+
+❓**Why** These use complex libraries that would take weeks to learn. We want you to focus on Python fundamentals first!
 
 ---
 
@@ -57,31 +59,18 @@ A question-answering system that:
 
 ---
 
-## Getting Started
+## Getting Started  
 
 ### Step 1: Set Up Your Environment
 
 Make sure your team has:
 - Anaconda or Miniconda installed
-- Python 3.12+ (comes with Anaconda/Miniconda)
-- Jupyter notebook or VSCode
+- Python 3.13+ (comes with Anaconda/Miniconda)
+- VSCode
 - Docker Desktop installed and running
 
 Create the conda environment:
-```bash
-# Create environment from file
-conda env create -f rag_env.yml
-
-# Activate environment
-conda activate rag3_313
-```
-
-If the environment file doesn't work, create manually:
-```bash
-conda create -n rag3_313 python=3.13
-conda activate rag3_313
-pip install sentence-transformers chromadb requests
-```
+- 📜 Refer to **rag_env_starter.md**
 
 ### Step 2: Prepare Your Documents
 
@@ -109,13 +98,13 @@ pip install sentence-transformers chromadb requests
 2. Read through the entire notebook first
 3. Look for sections marked `# TODO:`
 
-### Step 4: Complete the 7 TODOs
+### Step 4: Complete the TODOs
 
 Work through each TODO section in order. Each one builds on the previous:
 
 ---
 
-## The 7 TODO Tasks
+## 📝 The TODO Tasks
 
 ### TODO #1: Document Loading (15 points)
 **What:** Write a function to load text files from a folder
@@ -352,14 +341,16 @@ Your submission should include:
 
 ## Tips for Success
 
-### Before You Start:
+### Before You Start
+
 1. ✅ Read the entire notebook as a team
 2. ✅ Make sure Docker/Ollama is running on at least one machine
 3. ✅ Choose documents your team understands well
 4. ✅ Plan your time (expect 10-15 hours total team effort)
 5. ✅ Decide on work division early
 
-### While Working:
+### While Working
+
 1. ✅ Test each TODO individually before moving on
 2. ✅ Read the hints carefully
 3. ✅ Use `print()` statements to debug
@@ -368,23 +359,25 @@ Your submission should include:
 6. ✅ Save your work frequently (use Git!)
 7. ✅ Meet regularly to sync progress
 
-### For Better Results:
+### For Better Results
+
 1. ✅ Start with small chunk sizes (200-300) and test
 2. ✅ Try different overlap values (10%, 15%, 20%)
 3. ✅ Create questions that test different aspects
 4. ✅ Review answers critically - are they accurate?
 5. ✅ Have team members test the system independently
 
-### Common Mistakes to Avoid:
-❌ Not testing code before moving to next TODO
-❌ Copy-pasting without understanding
-❌ Choosing documents that are too similar
-❌ Creating only easy test questions
-❌ Not reading error messages carefully
-❌ Waiting until the last minute
-❌ Only one person doing all the work
-❌ Not communicating with teammates
-❌ Forgetting to document contributions
+### Common Mistakes to Avoid
+
+❌ Not testing code before moving to next TODO  
+❌ Copy-pasting without understanding  
+❌ Choosing documents that are too similar  
+❌ Creating only easy test questions  
+❌ Not reading error messages carefully  
+❌ Waiting until the last minute  
+❌ Only one person doing all the work  
+❌ Not communicating with teammates  
+❌ Forgetting to document contributions  
 
 ---
 
@@ -402,7 +395,7 @@ Your submission should include:
 ### "LLM connection failed"
 - Is Docker running? Check with `docker ps`
 - Is Ollama accessible? Try `curl http://127.0.0.1:11434`
-- Did you start the container? See COMMANDS.txt
+- Did you start the container? See docker_commands.md
 
 ### "Chunks are empty"
 - Check your chunking logic
@@ -463,20 +456,6 @@ Your submission should include:
 
 ---
 
-## Timeline Suggestion (Per Team)
-
-| Week | Task | Time (per person) |
-|------|------|-------------------|
-| **Week 1** | Form team, choose documents, set up environments | 2-3 hours |
-| **Week 2** | Complete TODOs #1-7, team review | 4-8 hours |
-| **Week 3** | Testing, optimization, analysis | 2-3 hours |
-| **Week 4** | Write report, document contributions, submit | 2-3 hours |
-
-**Total Time Per Person:** ~12-17 hours
-**Total Team Effort:** ~36-68 hours (depending on team size)
-
----
-
 ## Getting Help
 
 ### Within Your Team (Try This First!):
@@ -525,25 +504,28 @@ Your submission should include:
 
 ## After Completion
 
-### Showcase Your Work:
+### Showcase Your Work
+
 - Add to your GitHub portfolio
 - Demonstrate in job interviews
 - Explain how RAG works to friends
 
-### Next Steps:
+### Next Steps
+
 - Try different embedding models
 - Experiment with prompt engineering
 - Build a web interface
 - Try with larger document collections
 - Compare different LLMs
 
-### Skills You Gained:
-✅ Python programming fundamentals
-✅ File handling and text processing
-✅ Working with AI/ML libraries
-✅ System evaluation and metrics
-✅ Technical writing
-✅ Problem-solving and debugging
+### Skills You Gained
+
+✅ Python programming fundamentals  
+✅ File handling and text processing  
+✅ Working with AI/ML libraries  
+✅ System evaluation and metrics  
+✅ Technical writing  
+✅ Problem-solving and debugging  
 
 ---
 
