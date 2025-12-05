@@ -1,2 +1,0 @@
-Artificial intelligence is transforming the way organizations use data.
-This is a sample document for testing local RAG integration.
